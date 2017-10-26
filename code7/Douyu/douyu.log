@@ -1,0 +1,658 @@
+2017-10-15 12:27:15 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: Douyu)
+2017-10-15 12:27:15 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'Douyu', 'LOG_FILE': 'douyu.log', 'NEWSPIDER_MODULE': 'Douyu.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['Douyu.spiders']}
+2017-10-15 12:27:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2017-10-15 12:27:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-10-15 12:27:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-10-15 12:27:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['Douyu.pipelines.ImagePipeline', 'Douyu.pipelines.DouyuPipeline']
+2017-10-15 12:27:15 [scrapy.core.engine] INFO: Spider opened
+2017-10-15 12:27:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-10-15 12:27:15 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-10-15 12:27:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.douyu.com/robots.txt> from <GET http://capi.douyucdn.cn/robots.txt>
+2017-10-15 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.douyu.com/robots.txt> (referer: None)
+2017-10-15 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=> (referer: None)
+2017-10-15 12:27:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://rpic.douyucdn.cn/robots.txt> (referer: None)
+2017-10-15 12:27:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/10/1125263_20170910215829_big.jpg> (referer: None)
+2017-10-15 12:27:16 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/10/1125263_20170910215829_big.jpg> referred in <None>
+2017-10-15 12:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '合肥市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/白菜baby.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/10/1125263_20170910215829_big.jpg',
+ 'nick_name': '白菜baby',
+ 'uid': '71629221'}
+2017-10-15 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/acrpic/171015/3448328_1215.jpg> (referer: None)
+2017-10-15 12:27:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/acrpic/171015/3448328_1215.jpg> referred in <None>
+2017-10-15 12:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '鱼塘',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/洛涵loveyou.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/acrpic/171015/3448328_1215.jpg',
+ 'nick_name': '洛涵loveyou',
+ 'uid': '48533144'}
+2017-10-15 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2228580_20171014190040_big.jpg> (referer: None)
+2017-10-15 12:27:17 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2228580_20171014190040_big.jpg> referred in <None>
+2017-10-15 12:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '广州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/墨米儿nn.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2228580_20171014190040_big.jpg',
+ 'nick_name': '墨米儿nn',
+ 'uid': '141970475'}
+2017-10-15 12:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/1264973_20171010013236_big.jpg> (referer: None)
+2017-10-15 12:27:19 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/1264973_20171010013236_big.jpg> referred in <None>
+2017-10-15 12:27:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '鱼塘',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/乔儿儿儿儿儿.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/10/1264973_20171010013236_big.jpg',
+ 'nick_name': '乔儿儿儿儿儿',
+ 'uid': '76961524'}
+2017-10-15 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/1749955_20171011010125_big.jpg> (referer: None)
+2017-10-15 12:27:20 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/1749955_20171011010125_big.jpg> referred in <None>
+2017-10-15 12:27:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:20 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:20 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:20 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '长沙市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/温柔的喵小胖.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/11/1749955_20171011010125_big.jpg',
+ 'nick_name': '温柔的喵小胖',
+ 'uid': '82652070'}
+2017-10-15 12:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/03/1312662_20171003134231_big.jpg> (referer: None)
+2017-10-15 12:27:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/03/1312662_20171003134231_big.jpg> referred in <None>
+2017-10-15 12:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '合肥市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/章鱼姐姐z.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/03/1312662_20171003134231_big.jpg',
+ 'nick_name': '章鱼姐姐z',
+ 'uid': '72009135'}
+2017-10-15 12:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/22/1760931_20170922133718_big.jpg> (referer: None)
+2017-10-15 12:27:21 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/22/1760931_20170922133718_big.jpg> referred in <None>
+2017-10-15 12:27:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:21 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:21 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:21 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '九江市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/帅气十足的小马君.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/22/1760931_20170922133718_big.jpg',
+ 'nick_name': '帅气十足的小马君',
+ 'uid': '88916833'}
+2017-10-15 12:27:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/626572_20171011123134_big.jpg> (referer: None)
+2017-10-15 12:27:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/626572_20171011123134_big.jpg> referred in <None>
+2017-10-15 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '南京市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/麻瓜苏.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/11/626572_20171011123134_big.jpg',
+ 'nick_name': '麻瓜苏',
+ 'uid': '3880118'}
+2017-10-15 12:27:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/1992009_20171014120300_big.jpg> (referer: None)
+2017-10-15 12:27:22 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/1992009_20171014120300_big.jpg> referred in <None>
+2017-10-15 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '武汉市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/大漁酱酱酱.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/1992009_20171014120300_big.jpg',
+ 'nick_name': '大漁酱酱酱',
+ 'uid': '131249391'}
+2017-10-15 12:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/15/1910968_20170915235445_big.jpg> (referer: None)
+2017-10-15 12:27:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/15/1910968_20170915235445_big.jpg> referred in <None>
+2017-10-15 12:27:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '福州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/钱沙沙Amanda.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/15/1910968_20170915235445_big.jpg',
+ 'nick_name': '钱沙沙Amanda',
+ 'uid': '126080188'}
+2017-10-15 12:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/1628726_20171013101638_big.jpg> (referer: None)
+2017-10-15 12:27:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/1628726_20171013101638_big.jpg> referred in <None>
+2017-10-15 12:27:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Kitty甜心.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/1628726_20171013101638_big.jpg',
+ 'nick_name': 'Kitty甜心',
+ 'uid': '102265667'}
+2017-10-15 12:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/02/2660977_20171002231616_big.jpg> (referer: None)
+2017-10-15 12:27:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/02/2660977_20171002231616_big.jpg> referred in <None>
+2017-10-15 12:27:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '深圳市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/宇晴妹妹.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/02/2660977_20171002231616_big.jpg',
+ 'nick_name': '宇晴妹妹',
+ 'uid': '152272261'}
+2017-10-15 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3316325_20171014081507_big.jpg> (referer: None)
+2017-10-15 12:27:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3316325_20171014081507_big.jpg> referred in <None>
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 41 8192
+2017-10-15 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '安康市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/ty宸羽.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3316325_20171014081507_big.jpg',
+ 'nick_name': 'ty宸羽',
+ 'uid': '167131790'}
+2017-10-15 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/490175_20171012131718_big.jpg> (referer: None)
+2017-10-15 12:27:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/490175_20171012131718_big.jpg> referred in <None>
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:26 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '北京市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/浅希卡卡沐.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/12/490175_20171012131718_big.jpg',
+ 'nick_name': '浅希卡卡沐',
+ 'uid': '29869374'}
+2017-10-15 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2008433_20171015083834_big.jpg> (referer: None)
+2017-10-15 12:27:26 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2008433_20171015083834_big.jpg> referred in <None>
+2017-10-15 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '青岛市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/鲸鱼妹爱素颜.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2008433_20171015083834_big.jpg',
+ 'nick_name': '鲸鱼妹爱素颜',
+ 'uid': '132264011'}
+2017-10-15 12:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/08/18/2942421_20170818002358_big.jpg> (referer: None)
+2017-10-15 12:27:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/08/18/2942421_20170818002358_big.jpg> referred in <None>
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '上海市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Cute兔丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/08/18/2942421_20170818002358_big.jpg',
+ 'nick_name': 'Cute兔丶',
+ 'uid': '156623337'}
+2017-10-15 12:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/06/2455394_20171006013051_big.jpg> (referer: None)
+2017-10-15 12:27:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/06/2455394_20171006013051_big.jpg> referred in <None>
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/24/2700143_20170924145342_big.jpg> (referer: None)
+2017-10-15 12:27:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/24/2700143_20170924145342_big.jpg> referred in <None>
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:29 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/13/688928_20170913203807_big.jpg> (referer: None)
+2017-10-15 12:27:29 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/13/688928_20170913203807_big.jpg> referred in <None>
+2017-10-15 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '嘉兴市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/人美声甜胸大OwO.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/06/2455394_20171006013051_big.jpg',
+ 'nick_name': '人美声甜胸大OwO',
+ 'uid': '145399663'}
+2017-10-15 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/赵西子丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/24/2700143_20170924145342_big.jpg',
+ 'nick_name': '赵西子丶',
+ 'uid': '144631678'}
+2017-10-15 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '成都市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/小6想去月球.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/13/688928_20170913203807_big.jpg',
+ 'nick_name': '小6想去月球',
+ 'uid': '53630670'}
+2017-10-15 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/808296/20160825/9d74ff88e8f49bf1dc67680d14b2417b_big.jpg> (referer: None)
+2017-10-15 12:27:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/808296/20160825/9d74ff88e8f49bf1dc67680d14b2417b_big.jpg> referred in <None>
+2017-10-15 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '北京市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/甘甜不甜.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/808296/20160825/9d74ff88e8f49bf1dc67680d14b2417b_big.jpg',
+ 'nick_name': '甘甜不甜',
+ 'uid': '42964551'}
+2017-10-15 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/08/09/2640365_20170809162438_big.jpg> (referer: None)
+2017-10-15 12:27:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/08/09/2640365_20170809162438_big.jpg> referred in <None>
+2017-10-15 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '上海市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/云小朵MM.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/08/09/2640365_20170809162438_big.jpg',
+ 'nick_name': '云小朵MM',
+ 'uid': '148349656'}
+2017-10-15 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/27/2026554_20170927200433_big.jpg> (referer: None)
+2017-10-15 12:27:30 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/27/2026554_20170927200433_big.jpg> referred in <None>
+2017-10-15 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '天津市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Jocelyn老萌.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/27/2026554_20170927200433_big.jpg',
+ 'nick_name': 'Jocelyn老萌',
+ 'uid': '132276573'}
+2017-10-15 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/25/2661209_20170925110112_big.jpg> (referer: None)
+2017-10-15 12:27:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/25/2661209_20170925110112_big.jpg> referred in <None>
+2017-10-15 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '吉林市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/IrisNa.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/25/2661209_20170925110112_big.jpg',
+ 'nick_name': 'IrisNa',
+ 'uid': '152466508'}
+2017-10-15 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/07/27/2580884_20170727164249_big.jpg> (referer: None)
+2017-10-15 12:27:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/07/27/2580884_20170727164249_big.jpg> referred in <None>
+2017-10-15 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '福州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/蕾叽小宝贝.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/07/27/2580884_20170727164249_big.jpg',
+ 'nick_name': '蕾叽小宝贝',
+ 'uid': '150035594'}
+2017-10-15 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/17/2631539_20170917211515_big.jpg> (referer: None)
+2017-10-15 12:27:31 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/17/2631539_20170917211515_big.jpg> referred in <None>
+2017-10-15 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '泰安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/是小晴晴呀.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/17/2631539_20170917211515_big.jpg',
+ 'nick_name': '是小晴晴呀',
+ 'uid': '49397631'}
+2017-10-15 12:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/08/25/1722875_20170825210050_big.jpg> (referer: None)
+2017-10-15 12:27:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/08/25/1722875_20170825210050_big.jpg> referred in <None>
+2017-10-15 12:27:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:32 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:32 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:32 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/27/2879132_20170927135154_big.jpg> (referer: None)
+2017-10-15 12:27:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/27/2879132_20170927135154_big.jpg> referred in <None>
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/534669_20171010174839_big.jpg> (referer: None)
+2017-10-15 12:27:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/534669_20171010174839_big.jpg> referred in <None>
+2017-10-15 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '北京市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/在下就是关关.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/08/25/1722875_20170825210050_big.jpg',
+ 'nick_name': '在下就是关关',
+ 'uid': '110275519'}
+2017-10-15 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '巴中市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/李李R大橙子.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/27/2879132_20170927135154_big.jpg',
+ 'nick_name': '李李R大橙子',
+ 'uid': '156642696'}
+2017-10-15 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/西安小妞.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/10/534669_20171010174839_big.jpg',
+ 'nick_name': '西安小妞',
+ 'uid': '34347878'}
+2017-10-15 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/26/2404476_20170926234440_big.jpg> (referer: None)
+2017-10-15 12:27:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/26/2404476_20170926234440_big.jpg> referred in <None>
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:33 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/2081620_20171012093606_big.jpg> (referer: None)
+2017-10-15 12:27:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/2081620_20171012093606_big.jpg> referred in <None>
+2017-10-15 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '孝感市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/可爱的可可吖丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/26/2404476_20170926234440_big.jpg',
+ 'nick_name': '可爱的可可吖丶',
+ 'uid': '145973794'}
+2017-10-15 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '南宁市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/心羽呢.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/12/2081620_20171012093606_big.jpg',
+ 'nick_name': '心羽呢',
+ 'uid': '136190394'}
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/2124852_20171009180131_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/2124852_20171009180131_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/summer阿紫.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/09/2124852_20171009180131_big.jpg',
+ 'nick_name': 'summer阿紫',
+ 'uid': '138415627'}
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2939358_20171014164650_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2939358_20171014164650_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/25/2463304_20170925115247_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/25/2463304_20170925115247_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '南充市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Ly热可可.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2939358_20171014164650_big.jpg',
+ 'nick_name': 'Ly热可可',
+ 'uid': '157805933'}
+2017-10-15 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '洛杉矶',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/艾米粒aa.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/25/2463304_20170925115247_big.jpg',
+ 'nick_name': '艾米粒aa',
+ 'uid': '147600323'}
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/3173557_20171009153903_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/3173557_20171009153903_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/08/19/977439_20170819150830_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/08/19/977439_20170819150830_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '杭州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/carrie糖糖.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/09/3173557_20171009153903_big.jpg',
+ 'nick_name': 'carrie糖糖',
+ 'uid': '40171519'}
+2017-10-15 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/12/1516381_20170912173751_big.jpg> (referer: None)
+2017-10-15 12:27:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/12/1516381_20170912173751_big.jpg> referred in <None>
+2017-10-15 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '南京市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/小菊儿花姐姐.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/08/19/977439_20170819150830_big.jpg',
+ 'nick_name': '小菊儿花姐姐',
+ 'uid': '65342265'}
+2017-10-15 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '宁波市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/蜜桃kikibaby.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/12/1516381_20170912173751_big.jpg',
+ 'nick_name': '蜜桃kikibaby',
+ 'uid': '95442087'}
+2017-10-15 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/14/2717572_20170914140948_big.jpg> (referer: None)
+2017-10-15 12:27:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/14/2717572_20170914140948_big.jpg> referred in <None>
+2017-10-15 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2275140_20171015073410_big.jpg> (referer: None)
+2017-10-15 12:27:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2275140_20171015073410_big.jpg> referred in <None>
+2017-10-15 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/1549863_20171012101638_big.jpg> (referer: None)
+2017-10-15 12:27:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/1549863_20171012101638_big.jpg> referred in <None>
+2017-10-15 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '重庆市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/李师师l.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/14/2717572_20170914140948_big.jpg',
+ 'nick_name': '李师师l',
+ 'uid': '153474430'}
+2017-10-15 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '大连市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/叶啊叶啊叶晴儿丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/15/2275140_20171015073410_big.jpg',
+ 'nick_name': '叶啊叶啊叶晴儿丶',
+ 'uid': '143332381'}
+2017-10-15 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '成都市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/凉风习习tx.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/12/1549863_20171012101638_big.jpg',
+ 'nick_name': '凉风习习tx',
+ 'uid': '97932127'}
+2017-10-15 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3017432_20171013103701_big.jpg> (referer: None)
+2017-10-15 12:27:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3017432_20171013103701_big.jpg> referred in <None>
+2017-10-15 12:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/费小静.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3017432_20171013103701_big.jpg',
+ 'nick_name': '费小静',
+ 'uid': '159800594'}
+2017-10-15 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/30/2214429_20170930163330_big.jpg> (referer: None)
+2017-10-15 12:27:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/30/2214429_20170930163330_big.jpg> referred in <None>
+2017-10-15 12:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '长春市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/哒哒ccc.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/30/2214429_20170930163330_big.jpg',
+ 'nick_name': '哒哒ccc',
+ 'uid': '141906874'}
+2017-10-15 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/05/2466058_20171005183426_big.jpg> (referer: None)
+2017-10-15 12:27:36 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/05/2466058_20171005183426_big.jpg> referred in <None>
+2017-10-15 12:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '成都市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Strawberry莓莓猪.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/05/2466058_20171005183426_big.jpg',
+ 'nick_name': 'Strawberry莓莓猪',
+ 'uid': '36175860'}
+2017-10-15 12:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/3372003_20171012120429_big.jpg> (referer: None)
+2017-10-15 12:27:37 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/12/3372003_20171012120429_big.jpg> referred in <None>
+2017-10-15 12:27:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:37 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:37 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '成都市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/一只小玲儿.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/12/3372003_20171012120429_big.jpg',
+ 'nick_name': '一只小玲儿',
+ 'uid': '168345945'}
+2017-10-15 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/2610485_20171011153521_big.jpg> (referer: None)
+2017-10-15 12:27:38 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/2610485_20171011153521_big.jpg> referred in <None>
+2017-10-15 12:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '肇庆市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/赖懒懒bbbb.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/11/2610485_20171011153521_big.jpg',
+ 'nick_name': '赖懒懒bbbb',
+ 'uid': '151430918'}
+2017-10-15 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/2728485_20171013205236_big.jpg> (referer: None)
+2017-10-15 12:27:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/2728485_20171013205236_big.jpg> referred in <None>
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/05/2165717_20170905123352_big.jpg> (referer: None)
+2017-10-15 12:27:40 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/05/2165717_20170905123352_big.jpg> referred in <None>
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '沈阳市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/MiS媛.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/2728485_20171013205236_big.jpg',
+ 'nick_name': 'MiS媛',
+ 'uid': '153511554'}
+2017-10-15 12:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '伊犁哈萨克自治州',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Cheng阿澄.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/05/2165717_20170905123352_big.jpg',
+ 'nick_name': 'Cheng阿澄',
+ 'uid': '140436138'}
+2017-10-15 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/22/3326332_20170922155355_big.jpg> (referer: None)
+2017-10-15 12:27:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/22/3326332_20170922155355_big.jpg> referred in <None>
+2017-10-15 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '合肥市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/小小一萌儿.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/22/3326332_20170922155355_big.jpg',
+ 'nick_name': '小小一萌儿',
+ 'uid': '167473432'}
+2017-10-15 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/06/2763720_20171006222601_big.jpg> (referer: None)
+2017-10-15 12:27:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/06/2763720_20171006222601_big.jpg> referred in <None>
+2017-10-15 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '武汉市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/小彩虹呀.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/06/2763720_20171006222601_big.jpg',
+ 'nick_name': '小彩虹呀',
+ 'uid': '154433918'}
+2017-10-15 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/1102407_20171011184543_big.jpg> (referer: None)
+2017-10-15 12:27:41 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/11/1102407_20171011184543_big.jpg> referred in <None>
+2017-10-15 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '长春市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Ch丶文艺熙.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/11/1102407_20171011184543_big.jpg',
+ 'nick_name': 'Ch丶文艺熙',
+ 'uid': '70657330'}
+2017-10-15 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2273214_20171010112244_big.jpg> (referer: None)
+2017-10-15 12:27:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2273214_20171010112244_big.jpg> referred in <None>
+2017-10-15 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '广州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/林氏雪梨.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/10/2273214_20171010112244_big.jpg',
+ 'nick_name': '林氏雪梨',
+ 'uid': '143506107'}
+2017-10-15 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3088451_20171013072131_big.jpg> (referer: None)
+2017-10-15 12:27:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3088451_20171013072131_big.jpg> referred in <None>
+2017-10-15 12:27:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:42 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:42 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '上海市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/一只77酱.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/13/3088451_20171013072131_big.jpg',
+ 'nick_name': '一只77酱',
+ 'uid': '161538092'}
+2017-10-15 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3279944_20171014093511_big.jpg> (referer: None)
+2017-10-15 12:27:42 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3279944_20171014093511_big.jpg> referred in <None>
+2017-10-15 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '锡拉丘兹',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/伊娃大姐姐.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3279944_20171014093511_big.jpg',
+ 'nick_name': '伊娃大姐姐',
+ 'uid': '166450292'}
+2017-10-15 12:27:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/acrpic/171015/585704_1222.jpg> (referer: None)
+2017-10-15 12:27:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/acrpic/171015/585704_1222.jpg> referred in <None>
+2017-10-15 12:27:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '重庆市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/糯米团子Q.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/acrpic/171015/585704_1222.jpg',
+ 'nick_name': '糯米团子Q',
+ 'uid': '19147117'}
+2017-10-15 12:27:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2016/11/30/1416321_20161130022411_big.jpg> (referer: None)
+2017-10-15 12:27:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2016/11/30/1416321_20161130022411_big.jpg> referred in <None>
+2017-10-15 12:27:43 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '绥化市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/东北少年丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2016/11/30/1416321_20161130022411_big.jpg',
+ 'nick_name': '东北少年丶',
+ 'uid': '88878209'}
+2017-10-15 12:27:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/24/3314698_20170924132652_big.jpg> (referer: None)
+2017-10-15 12:27:43 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/24/3314698_20170924132652_big.jpg> referred in <None>
+2017-10-15 12:27:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:43 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:43 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '武汉市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/糖糖小萌主.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/24/3314698_20170924132652_big.jpg',
+ 'nick_name': '糖糖小萌主',
+ 'uid': '167212691'}
+2017-10-15 12:27:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/3441337_20171009095658_big.jpg> (referer: None)
+2017-10-15 12:27:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/3441337_20171009095658_big.jpg> referred in <None>
+2017-10-15 12:27:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '青岛市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/biu工藤新一.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/09/3441337_20171009095658_big.jpg',
+ 'nick_name': 'biu工藤新一',
+ 'uid': '170770995'}
+2017-10-15 12:27:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/20/930127_20170920114039_big.jpg> (referer: None)
+2017-10-15 12:27:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/20/930127_20170920114039_big.jpg> referred in <None>
+2017-10-15 12:27:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '苏州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/Amy静儿呀.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/20/930127_20170920114039_big.jpg',
+ 'nick_name': 'Amy静儿呀',
+ 'uid': '50852464'}
+2017-10-15 12:27:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/08/16/1780045_20170816215718_big.jpg> (referer: None)
+2017-10-15 12:27:44 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/08/16/1780045_20170816215718_big.jpg> referred in <None>
+2017-10-15 12:27:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '长沙市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/小姨妈min.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/08/16/1780045_20170816215718_big.jpg',
+ 'nick_name': '小姨妈min',
+ 'uid': '74280230'}
+2017-10-15 12:27:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2865127_20171010005843_big.jpg> (referer: None)
+2017-10-15 12:27:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2865127_20171010005843_big.jpg> referred in <None>
+2017-10-15 12:27:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:46 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:46 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:46 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '西安市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/悠悠fairy.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/10/2865127_20171010005843_big.jpg',
+ 'nick_name': '悠悠fairy',
+ 'uid': '155941228'}
+2017-10-15 12:27:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/acrpic/171015/590737_1222.jpg> (referer: None)
+2017-10-15 12:27:46 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/acrpic/171015/590737_1222.jpg> referred in <None>
+2017-10-15 12:27:46 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '爱迪生',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/我就是UU阿i.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/acrpic/171015/590737_1222.jpg',
+ 'nick_name': '我就是UU阿i',
+ 'uid': '13964811'}
+2017-10-15 12:27:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2996754_20171014155754_big.jpg> (referer: None)
+2017-10-15 12:27:47 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2996754_20171014155754_big.jpg> referred in <None>
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2141766_20171010105737_big.jpg> (referer: None)
+2017-10-15 12:27:47 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/10/2141766_20171010105737_big.jpg> referred in <None>
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:47 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '成都市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/大牛牛BABY.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/2996754_20171014155754_big.jpg',
+ 'nick_name': '大牛牛BABY',
+ 'uid': '159390691'}
+2017-10-15 12:27:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '武汉市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/你的珂珂宝.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/10/2141766_20171010105737_big.jpg',
+ 'nick_name': '你的珂珂宝',
+ 'uid': '139700167'}
+2017-10-15 12:27:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3438683_20171014144758_big.jpg> (referer: None)
+2017-10-15 12:27:48 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3438683_20171014144758_big.jpg> referred in <None>
+2017-10-15 12:27:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '广州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/美乐快跑.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/3438683_20171014144758_big.jpg',
+ 'nick_name': '美乐快跑',
+ 'uid': '170736304'}
+2017-10-15 12:27:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/26/1567447_20170926113130_big.jpg> (referer: None)
+2017-10-15 12:27:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/26/1567447_20170926113130_big.jpg> referred in <None>
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '苏州市',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/婷婷玉立zZZ.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/26/1567447_20170926113130_big.jpg',
+ 'nick_name': '婷婷玉立zZZ',
+ 'uid': '98122860'}
+2017-10-15 12:27:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/09/11/2659550_20170911133145_big.jpg> (referer: None)
+2017-10-15 12:27:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/09/11/2659550_20170911133145_big.jpg> referred in <None>
+2017-10-15 12:27:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://rpic.douyucdn.cn/appCovers/2017/10/03/2926187_20171003205909_big.jpg> (referer: None)
+2017-10-15 12:27:50 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://rpic.douyucdn.cn/appCovers/2017/10/03/2926187_20171003205909_big.jpg> referred in <None>
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'sBIT' 41 3
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: b'sBIT' 41 3 (unknown)
+2017-10-15 12:27:50 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 56 8192
+2017-10-15 12:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '鱼塘',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/大公主Q大仙女.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/09/11/2659550_20170911133145_big.jpg',
+ 'nick_name': '大公主Q大仙女',
+ 'uid': '152071912'}
+2017-10-15 12:27:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=100&offset=>
+{'city': '昌吉回族自治州',
+ 'image_path': '/Users/yangxinzhi/spider/day7/Douyu/images/full/蜡笔小静丶.jpg',
+ 'image_url': 'https://rpic.douyucdn.cn/appCovers/2017/10/03/2926187_20171003205909_big.jpg',
+ 'nick_name': '蜡笔小静丶',
+ 'uid': '156050858'}
+2017-10-15 12:27:51 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2017-10-15 12:27:51 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-10-15 12:27:51 [scrapy.crawler] INFO: Received SIG_UNBLOCK twice, forcing unclean shutdown
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/appCovers/2017/09/29/3363072_20170929195808_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/appCovers/2017/09/29/3363072_20170929195808_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/1746491_20171014163913_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/14/1746491_20171014163913_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/live-cover/roomCover/2017/10/13/7a9cf9da246f1aee1c74568373dfa7e7_small.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/live-cover/roomCover/2017/10/13/7a9cf9da246f1aee1c74568373dfa7e7_small.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/appCovers/2017/10/09/2081846_20171009171400_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/appCovers/2017/10/09/2081846_20171009171400_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/appCovers/2017/08/06/2545527_20170806175640_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/appCovers/2017/08/06/2545527_20170806175640_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/appCovers/2017/09/22/2302097_20170922203103_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/appCovers/2017/09/22/2302097_20170922203103_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
+2017-10-15 12:27:51 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/12/1163063_20171012202518_big.jpg. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-10-15 12:27:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://rpic.douyucdn.cn/live-cover/appCovers/2017/10/12/1163063_20171012202518_big.jpg> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: >]
